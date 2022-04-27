@@ -3,7 +3,7 @@
 		$servername = "127.0.0.1";
 		$username = "root";
 		$password = "";
-		$db = "";
+		$db = "ReviewDB";
 		
 		$con = new mysqli($servername, $username, $password, $db);
 		
@@ -15,6 +15,6 @@
 	}
 	
 	function closeCon($con) {
-		
+		$con -> close();
 	}
 ?>
