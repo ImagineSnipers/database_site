@@ -25,9 +25,9 @@
 	$sql = "INSERT INTO Reviews (customer_last, customer_first, stars, comments, email) VALUES ('Rhodes', 'Lance', 5, 'The greatest!', 'larhodes@wsd.net');";
 	
 	if (mysqli_query($con, $sql)) {
-		echo "New record created successfully.";
+		echo "Review submitted successfully.";
 	} else {
-		echo "Error: " . $sql . "<br>" . mysqli_error($con);
+		echo "An error occured.";
 	}
 	
 	closeCon($con);
